@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="sv">
         <Head>
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/icon/favicon.svg" />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"

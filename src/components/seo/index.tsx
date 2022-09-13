@@ -8,7 +8,7 @@ type Props = {
   pageUrl: string;
 };
 
-export const Seo = ({ title, description, image, pageUrl }: Props) => {
+export const SEO = ({ title, description, image, pageUrl }: Props) => {
   return (
     <Head>
       {/* General tags */}
