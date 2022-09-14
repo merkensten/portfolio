@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { SEO } from '../components/seo';
 import styles from '../styles/pages/Home.module.scss';
+import { Hero } from '../components/main';
 
 const Home: NextPage = () => {
   return (
@@ -15,8 +16,13 @@ const Home: NextPage = () => {
       />
 
       <main className={styles.main}>
-        <h1>Mattis Portfolio</h1>
-        {/* <img src="/bilder/mattis/mattis-hero-bild.png" alt="Mattis bild" />
+        <Hero
+          title="Mattis Erkensten."
+          subTitle="Jag är en JavaScript / TypeScript utvecklare med primärt fokus på Front End."
+          imgUrl="/bilder/mattis/mattis-hero-bild.png"
+          imgAlt="Mattis Portfolio Hero bild"
+        />
+        {/* 
         <img
           src="/bilder/verktyg/verktyg-1.svg"
           alt="Mattis bild"

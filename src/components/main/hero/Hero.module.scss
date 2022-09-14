@@ -1,0 +1,26 @@
+.hero_wrapper {
+  margin-top: 40px;
+
+  .hero_content_wrapper {
+    margin-bottom: 20px;
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    margin-top: 80px;
+
+    .hero_content_wrapper {
+      margin-top: 150px;
+    }
+
+    .hero_img {
+      margin-left: 100px;
+    }
+  }
+}
