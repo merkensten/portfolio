@@ -1,0 +1,17 @@
+.utbildningar_wrapper {
+  margin-top: 5rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    li {
+      list-style-type: disc;
+      font-size: 2rem;
+    }
+
+    li + li {
+      margin-top: 1rem;
+    }
+  }
+}

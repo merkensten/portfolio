@@ -3,7 +3,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { SEO } from '../components/seo';
 import styles from '../styles/pages/Home.module.scss';
-import { Hero, OmMig, Projekt, Verktyg } from '../components/main';
+import {
+  Hero,
+  OmMig,
+  Projekt,
+  Verktyg,
+  Utbildningar,
+} from '../components/main';
 
 const projektData = {
   title: 'Projekt',
@@ -19,6 +25,23 @@ const verktygImages = [
   { url: '/bilder/verktyg/verktyg-2.svg', alt: 'Verktyg backend' },
   { url: '/bilder/verktyg/verktyg-3.svg', alt: 'Verktyg css & blandat' },
   { url: '/bilder/verktyg/verktyg-4.svg', alt: 'Verktyg devops' },
+];
+
+const utbildningar = [
+  {
+    title:
+      '2017 - 2019 E-handelslogistiker / E-commerce manager (Nässjö Akademin)',
+  },
+  {
+    title: '2020 - Frontend Developer (Changemakers education)',
+  },
+  {
+    title: '2021 - Fullstack JavaScript (Mölndals yh)',
+  },
+  {
+    title:
+      '2021 - 2023 Frontend Developer (EC Educations), fokus på Mern Stacken',
+  },
 ];
 
 const Home: NextPage = () => {
@@ -57,37 +80,7 @@ const Home: NextPage = () => {
           title="Verktyg som jag har arbetat med"
           images={verktygImages}
         />
-        {/* 
-        <img
-          src="/bilder/verktyg/verktyg-1.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        />
-        <img
-          src="/bilder/verktyg/verktyg-2.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        />
-        <img
-          src="/bilder/verktyg/verktyg-3.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        />
-        <img
-          src="/bilder/verktyg/verktyg-4.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        />
-        <img
-          src="/bilder/projekt/voii-projekt-mobil.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        />
-        <img
-          src="/bilder/projekt/voii-projekt-desktop.svg"
-          alt="Mattis bild"
-          className="verktyg-img"
-        /> */}
+        <Utbildningar title="Mina Utbildningar" utbildningar={utbildningar} />
       </main>
     </div>
   );
