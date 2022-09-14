@@ -14,14 +14,10 @@ export default function NotFound() {
     <>
       <Wrapper>
         <div className={styles.notfound_wrapper}>
-          <div className={styles.notfound_img_wrapper}></div>
-          <div className={styles.notfound_text_wrapper}>
-            <h1>We rolled a one on perception to find this page.</h1>
-            <p> Critical fail - 404 - page not found </p>
-            <Link href="/">
-              <a className={styles.notfound_button}>Go back to the homepage</a>
-            </Link>
-          </div>
+          <h1>404 - sidan hittades inte...</h1>
+          <Link href="/">
+            <button>Gå tillbaka till startsidan</button>
+          </Link>
         </div>
       </Wrapper>
     </>
