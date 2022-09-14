@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 3rem;
 
     .logo {
       font-size: 4rem;
@@ -50,9 +50,6 @@ header {
           cursor: pointer;
         }
       }
-    }
-    @media (min-width: 1024px) {
-      padding-top: 1rem;
     }
   }
 }
