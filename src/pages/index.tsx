@@ -9,6 +9,7 @@ import {
   Projekt,
   Verktyg,
   Utbildningar,
+  Kontakt,
 } from '../components/main';
 
 const projektData = {
@@ -81,6 +82,7 @@ const Home: NextPage = () => {
           images={verktygImages}
         />
         <Utbildningar title="Mina Utbildningar" utbildningar={utbildningar} />
+        <Kontakt />
       </main>
     </div>
   );
