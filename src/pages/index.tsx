@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { SEO } from '../components/seo';
 import styles from '../styles/pages/Home.module.scss';
-import { Hero, OmMig, Projekt } from '../components/main';
+import { Hero, OmMig, Projekt, Verktyg } from '../components/main';
 
 const projektData = {
   title: 'Projekt',
@@ -13,6 +13,13 @@ const projektData = {
   image2Url: '/bilder/projekt/voii-projekt-mobil.svg',
   image2Alt: 'voii.se mobile',
 };
+
+const verktygImages = [
+  { url: '/bilder/verktyg/verktyg-1.svg', alt: 'Verktyg frontend' },
+  { url: '/bilder/verktyg/verktyg-2.svg', alt: 'Verktyg backend' },
+  { url: '/bilder/verktyg/verktyg-3.svg', alt: 'Verktyg css & blandat' },
+  { url: '/bilder/verktyg/verktyg-4.svg', alt: 'Verktyg devops' },
+];
 
 const Home: NextPage = () => {
   return (
@@ -45,6 +52,10 @@ const Home: NextPage = () => {
           image1Alt={projektData.image1Alt}
           image2Url={projektData.image2Url}
           image2Alt={projektData.image2Alt}
+        />
+        <Verktyg
+          title="Verktyg som jag har arbetat med"
+          images={verktygImages}
         />
         {/* 
         <img
