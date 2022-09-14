@@ -1,26 +1,25 @@
 .hero_wrapper {
-  margin-top: 40px;
+  margin-top: 4rem;
 
   .hero_content_wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
     p {
-      font-size: 22px;
+      font-size: 2.2rem;
     }
   }
 
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
-    margin-top: 80px;
+    margin-top: 8rem;
 
     .hero_content_wrapper {
-      margin-top: 150px;
+      margin-top: 15rem;
     }
 
     .hero_img {
-      margin-left: 100px;
+      margin-left: 10rem;
     }
   }
 }

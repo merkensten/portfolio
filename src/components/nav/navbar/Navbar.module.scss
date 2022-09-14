@@ -3,16 +3,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 1rem;
 
     .logo {
-      font-size: 40px;
+      font-size: 4rem;
       font-weight: 600;
     }
 
     .mobileMenu {
       .menuIcon {
-        font-size: 40px;
+        font-size: 4rem;
         cursor: pointer;
       }
       @media (min-width: 1024px) {
@@ -31,28 +31,28 @@ header {
         .menuList {
           display: flex;
           align-items: center;
-          margin-left: 40px;
+          margin-left: 4rem;
           justify-content: space-between;
 
           .menuItem {
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: 500;
-            margin-left: 40px;
+            margin-left: 4rem;
           }
         }
         button {
-          font-size: 20px;
+          font-size: 2rem;
           font-weight: 500;
-          padding: 10px 20px;
+          padding: 1rem 3rem;
           border: 1px solid #000;
-          border-radius: 5px;
+          border-radius: 10rem;
           background-color: transparent;
           cursor: pointer;
         }
       }
     }
     @media (min-width: 1024px) {
-      padding-top: 10px;
+      padding-top: 1rem;
     }
   }
 }

@@ -19,52 +19,20 @@
 }
 
 .navbar_modal_wrapper {
-  padding: 40px;
+  padding: 4rem;
   max-width: 1200px;
   margin: 0 auto;
-
-  nav li {
-    list-style: none;
-  }
 }
 
 .navbar_modal_top_section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
-}
-
-.icon {
-  cursor: pointer;
-}
-
-.social_icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  margin-top: 60px;
-}
-
-.navbar_modal_button {
-  outline: none;
-  border: none;
-  background-color: transparent;
-  color: $color-black;
-  cursor: pointer;
-  font-size: 32px;
-  transition: 0.5s;
-  font-family: 'Poppins', sans-serif;
-
-  &:hover {
-    color: $color-grey;
-    text-decoration: underline;
-    transition: 0.5s;
-  }
 }
 
 .closeIcon {

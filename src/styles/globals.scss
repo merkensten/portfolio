@@ -40,7 +40,7 @@ h3 {
 /* Paragraph styles */
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: $p-small;
+  font-size: $p-normal;
   font-weight: 400;
   line-height: $line-height-normal;
   margin: 0;
@@ -54,7 +54,7 @@ ol {
 }
 
 li {
-  font-size: $p-small;
+  font-size: $p-normal;
   font-weight: 400;
   margin: 0;
 }

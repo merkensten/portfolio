@@ -1,0 +1,32 @@
+.om_mig_wrapper {
+  margin-top: 4rem;
+
+  .om_mig_img {
+    display: none;
+  }
+
+  .om_mig_title {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .om_mig_title {
+      text-align: center;
+    }
+
+    .om_mig_content_wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 7rem;
+
+      &_text {
+        margin-top: 2rem;
+      }
+    }
+
+    .om_mig_img {
+      display: block;
+      width: 40%;
+    }
+  }
+}
