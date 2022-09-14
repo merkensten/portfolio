@@ -16,7 +16,7 @@ type Props = {
 function Verktyg({ title, images }: Props) {
   return (
     <Wrapper cssClass={styles.verktyg_wrapper}>
-      <h2 className={styles.verktyg_title}>{title}</h2>
+      <h2 id="verktyg" className={styles.verktyg_title}>{title}</h2>
       <div className={styles.verktyg_img_wrapper}>
         {images &&
           images.map((image) => (

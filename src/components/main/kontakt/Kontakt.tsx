@@ -6,7 +6,7 @@ import styles from './Kontakt.module.scss';
 function Kontakt() {
   return (
     <Wrapper cssClass={styles.kontakt_wrapper}>
-      <h2>Kontkta Mig</h2>
+      <h2 id="kontakt">Kontkta Mig</h2>
       <p>
         Hör gärna av dig om du letar efter en frontend / javascript utvecklare.
       </p>

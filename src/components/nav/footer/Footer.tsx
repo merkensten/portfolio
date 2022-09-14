@@ -27,7 +27,9 @@ function Footer() {
         <div className={styles.footer_border_display}></div>
       </div>
       <Wrapper cssClass={styles.footer_wrapper}>
-        <p className={styles.footer_logo}>Mattis.</p>
+        <Link href="/">
+          <a className={styles.footer_logo}>Mattis.</a>
+        </Link>
         <nav>
           <ul>
             <FooterLinkItem

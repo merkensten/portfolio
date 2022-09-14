@@ -13,7 +13,9 @@ type Props = {
 function OmMig({ title, text1, text2, imgUrl, imgAlt }: Props) {
   return (
     <Wrapper cssClass={styles.om_mig_wrapper}>
-      <h2 className={styles.om_mig_title}>{title}</h2>
+      <h2 id="om-mig" className={styles.om_mig_title}>
+        {title}
+      </h2>
 
       <div className={styles.om_mig_content_wrapper}>
         <img className={styles.om_mig_img} src={imgUrl} alt={imgAlt} />

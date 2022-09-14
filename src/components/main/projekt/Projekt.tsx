@@ -22,7 +22,9 @@ function Projekt({
 }: Props) {
   return (
     <Wrapper cssClass={styles.projekt_wrapper}>
-      <h2 className={styles.projekt_title}>{title}</h2>
+      <h2 id="projekt" className={styles.projekt_title}>
+        {title}
+      </h2>
       <p className={styles.projekt_text}>{text}</p>
       <div className={styles.projekt_img_wrapper}>
         <img className={styles.projekt_img_1} src={image1Url} alt={image1Alt} />
