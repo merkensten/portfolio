@@ -22,6 +22,10 @@
   padding: 4rem;
   max-width: 1200px;
   margin: 0 auto;
+
+  ul {
+    padding: 0;
+  }
 }
 
 .navbar_modal_top_section {
@@ -36,7 +40,7 @@
 }
 
 .closeIcon {
-  font-size: 32px;
+  font-size: 4rem;
   cursor: pointer;
-  margin-top: 8px;
+  margin-top: 0.4rem;
 }

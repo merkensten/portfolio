@@ -1,6 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 import { SEO } from '../components/seo';
 import styles from '../styles/pages/Home.module.scss';
 import {
@@ -57,8 +55,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Hero
-          title="Mattis Erkensten."
-          subTitle="Jag är en JavaScript / TypeScript utvecklare med primärt fokus på Front End."
+          title="Mattis Erkensten"
+          subTitle="Jag är en JavaScript / TypeScript utvecklare med primärt fokus på FrontEnd men jag är inte helt obekant med backend då jag har jobbat med både express och nestjs för att skapa rest apier."
           imgUrl="/bilder/mattis/mattis-hero-bild.png"
           imgAlt="Mattis Portfolio Hero bild"
         />
