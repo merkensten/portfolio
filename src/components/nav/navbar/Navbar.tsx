@@ -6,14 +6,23 @@ import { NavbarItems } from './navbarItems';
 import NavItem from './NavItem';
 import Link from 'next/link';
 import NavbarModal from './navbarModal/NavbarModal';
+import { UseLockScroll } from '../../../hooks';
 
 function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
-  console.log(NavbarItems);
+
+  const { lockScroll, unlockScroll } = UseLockScroll();
 
   const handleOpenModal = () => {
+    lockScroll();
     setIsOpen(true);
   };
+
+  const handleCloseModal = () => {
+    unlockScroll();
+    setIsOpen(false);
+  };
+
   return (
     <header>
       <Wrapper cssClass={styles.navbar}>
@@ -24,7 +33,7 @@ function Navbar() {
             </Link>
             <div className={styles.mobileMenu}>
               <HiMenuAlt4
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={handleOpenModal}
                 className={styles.menuIcon}
               />
             </div>
@@ -48,7 +57,7 @@ function Navbar() {
         )}
         {isOpen && (
           <NavbarModal
-            onCloseModal={() => setIsOpen(false)}
+            onCloseModal={handleCloseModal}
             navbarItems={NavbarItems}
           />
         )}

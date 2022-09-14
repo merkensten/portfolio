@@ -14,7 +14,7 @@
   -moz-transform: translateZ(1px);
   -o-transform: translateZ(1px);
   transform: translateZ(1px);
-  height: 150vh;
+  max-height: 150vh;
   -webkit-overflow-scrolling: touch;
 }
 
