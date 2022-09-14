@@ -5,8 +5,13 @@ import styles from './Wrapper.module.scss';
 
 type Props = {
   children: React.ReactNode;
+  cssClass?: string;
 };
 
-export const Wrapper = ({ children }: Props) => {
-  return <div className={styles.wrapper}>{children}</div>;
+export const Wrapper = ({ children, cssClass }: Props) => {
+  return <div className={`${styles.wrapper} ${cssClass}`}>{children}</div>;
 };
+
+// export const ContentWrapper = ({ children }: Props) => {
+//   return <div className={styles.contentWrapper}>{children}</div>;
+// };

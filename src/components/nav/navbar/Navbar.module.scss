@@ -1,0 +1,57 @@
+header {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .mobileMenu {
+      .menuIcon {
+        font-size: 40px;
+        cursor: pointer;
+      }
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    .desktopMenu {
+      display: none;
+      @media (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        justify-content: space-between;
+
+        .menuList {
+          display: flex;
+          align-items: center;
+          margin-left: 40px;
+          justify-content: space-between;
+
+          .menuItem {
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 40px;
+          }
+        }
+        button {
+          font-size: 20px;
+          font-weight: 500;
+          padding: 10px 20px;
+          border: 1px solid #000;
+          border-radius: 5px;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      padding-top: 10px;
+    }
+  }
+}

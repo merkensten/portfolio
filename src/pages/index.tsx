@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1>Mattis Portfolio</h1>
-        <img src="/bilder/mattis/mattis-hero-bild.png" alt="Mattis bild" />
+        {/* <img src="/bilder/mattis/mattis-hero-bild.png" alt="Mattis bild" />
         <img
           src="/bilder/verktyg/verktyg-1.svg"
           alt="Mattis bild"
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           src="/bilder/projekt/voii-projekt-desktop.svg"
           alt="Mattis bild"
           className="verktyg-img"
-        />
+        /> */}
       </main>
     </div>
   );
