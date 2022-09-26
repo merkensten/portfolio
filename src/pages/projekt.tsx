@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero } from '../components/main';
+import { Hero, ProjektImg } from '../components/main';
 
 import styles from '../styles/pages/Projekt.module.scss';
 
@@ -8,62 +8,135 @@ function projekt() {
     <>
       <Hero
         title="Mina projekt"
-        subTitle="Jag har skapat flera projekt under åren, både skarpa projekt i företag och som del av min utbildning. Vissa projekt är aktiva och andra är inte det längre. Här kan du läsa mer om dem."
+        subTitle="Jag har skapat flera projekt under åren, både skarpa projekt i företag och som del av min utbildning. Nedan kan du läsa mer om de projekt som jag valt att lyfta fram."
         imgUrl="/bilder/projekt-hero.svg"
         imgAlt="Mattis Portfolio Projekt Hero bild illustration"
       />
       <div className={styles.projekt_wrapper}>
         <h2>Projekten</h2>
-        <div>
+        <div className={styles.projekt}>
           <h3>Voii</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            obcaecati sapiente natus eligendi dolorem explicabo ducimus ex
-            molestias illo eius rerum, velit nesciunt libero amet cumque.
-            Nesciunt et deserunt quo architecto, cupiditate, dolores quasi neque
-            illum consequatur quisquam repudiandae ipsa?
+            Voii är mitt primära utvecklingsprojekt vid sidan av utbildningen.
+            Detta är ett aktivt projekt som jag jobbar med. Jag håller på att
+            bygga om hela webbplatsen då den nuvarande webbplatsen var
+            undermålig och att den inte har arbetats aktivt med. Den nya
+            webbplatsen byggs upp med Next.js, Nest JS för att hantera data och
+            Contentful CMS för att hantera innehållet.
+          </p>
+          <p>
+            Detta projekt är inte deployat på den riktiga domänen än utan är
+            fortfarande i utvecklingsläge i någon vecka till.
+          </p>
+          <p>
+            Voii.se är en webbplats som skall underlätta när man letar efter ett
+            nytt mobilabonnemang med eller utan telefon.
           </p>
         </div>
-        <div>
+        <div className={styles.projekt}>
           <h3>Todo app Next.js Nest JS</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            obcaecati sapiente natus eligendi dolorem explicabo ducimus ex
-            molestias illo eius rerum, velit nesciunt libero amet cumque.
-            Nesciunt et deserunt quo architecto, cupiditate, dolores quasi neque
-            illum consequatur quisquam repudiandae ipsa?
+            Detta är ett projekt som jag nyligen skapat för att lära mig mer om
+            Nest JS men också för att ha ett projekt som jag kan visa upp koden
+            för och där ni kan få en uppfattning om hur projekt som jag skapat
+            ser ut. Detta projekt är en simpel todo applikation som är skapad
+            med Next.js för frontend och Nest.js för backend. Jag använder mig
+            av Mongo DB som databas, den körs genom tjänsten Mongo DB Atlas.
           </p>
+          <a
+            href="https://github.com/merkensten/todoapp-nextjs-nestjs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github repot för detta projekt
+          </a>
         </div>
-        <div>
+        <div className={styles.projekt}>
           <h3>E-dice</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            obcaecati sapiente natus eligendi dolorem explicabo ducimus ex
-            molestias illo eius rerum, velit nesciunt libero amet cumque.
-            Nesciunt et deserunt quo architecto, cupiditate, dolores quasi neque
-            illum consequatur quisquam repudiandae ipsa?
+            Ett av de större projekten under frontend utbildningen på
+            ec-utbildning var att skapa en e-handel i grupp. Min grupp valde att
+            skapa det fiktiv företaget E-dice där man kan köpa coola tärningar.
+            Projektet byggdes upp i tre delar, clienten, server och en admin
+            app.
           </p>
+          <p>
+            Clienten är frontenden för e-handeln där kunden kan se produkter,
+            lägga beställningar samt se sina beställningar i inloggat läge.
+            Clienten skapades med Next.js och sidorna byggs upp statiskt.
+          </p>
+          <p>
+            Admin appen är där man primärt kan hantera produkterna och
+            beställningarna för e-handeln. Admin appen skapades create-react-app
+            och är en single page application.
+          </p>
+          <p>
+            Servern sköter om all hantering av datan och jobbar mot en MongoDB
+            databas. Servern är skapad med Express.
+          </p>
+          <h4>Länkar till github:</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/merkensten/admin-edice"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Edice Admin app
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/kajberg84/Edice-front"
+                target="_blank"
+                rel="noreferrer"
+              >
+                E-dice Frontend
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/kajberg84/edice-back"
+                target="_blank"
+                rel="noreferrer"
+              >
+                E-dice Backend
+              </a>
+            </li>
+          </ul>
         </div>
         <h2>Övriga projekt:</h2>
-        <div>
+        <div className={styles.projekt}>
           <h3>Stensholms Trädgård</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            obcaecati sapiente natus eligendi dolorem explicabo ducimus ex
-            molestias illo eius rerum, velit nesciunt libero amet cumque.
-            Nesciunt et deserunt quo architecto, cupiditate, dolores quasi neque
-            illum consequatur quisquam repudiandae ipsa?
+            Ett projekt som jag gjort i mitt företag där jag skapat en webbplats
+            åt ett lokalt företag i min hemstad. Webbplatsen är skapad med
+            Wordpress och Woocommerce och syftet med webbplatsen är att den ska
+            fungera som en lokal e-handel för företaget.
           </p>
+          <a
+            href="https://stensholmstradgard.se/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Till Stensholms Trädgård
+          </a>
         </div>
-        <div>
+        <div className={styles.projekt}>
           <h3>Caferangen</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            obcaecati sapiente natus eligendi dolorem explicabo ducimus ex
-            molestias illo eius rerum, velit nesciunt libero amet cumque.
-            Nesciunt et deserunt quo architecto, cupiditate, dolores quasi neque
-            illum consequatur quisquam repudiandae ipsa?
+            Denna webbplats är skapad med Squarespace, anledning till valet på
+            Squarespace var att de anställda på restaurangen själva skall kunna
+            uppdatera lite design och innehåll på webbplatsen. Mitt primära
+            arbete för detta projekt var att ta fram en plan på vilka sidor som
+            skulle finnas, flödet på webbplatsen och sedan få detta att mynna ut
+            i en design som sedan skulle implementeras i Squarespace. Mycket av
+            detta projekt var UX relaterat och jag jobbade mycket med Figma
+            innan jag byggde webbplatsen i Squarespace.
           </p>
+          <a href="https://www.caferangen.se/" target="_blank" rel="noreferrer">
+            Till Caferangen
+          </a>
         </div>
       </div>
     </>
