@@ -76,3 +76,14 @@ a {
 img {
   max-width: 100%;
 }
+
+.btn {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border: 1px solid #000;
+  border-radius: 10rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}

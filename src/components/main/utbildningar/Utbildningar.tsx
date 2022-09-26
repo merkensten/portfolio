@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wrapper } from '../../layout';
+import Link from 'next/link';
 
 import styles from './Utbildningar.module.scss';
 
@@ -21,6 +22,9 @@ function Utbildningar({ title, utbildningar }: Props) {
           <li key={utbildning.title}>{utbildning.title}</li>
         ))}
       </ul>
+      <Link href="/utbildningar">
+        <button className='btn'>Läs mer</button>
+      </Link>
     </Wrapper>
   );
 }

@@ -1,0 +1,31 @@
+.utbildningar_wrapper {
+    padding: 0 2rem;
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 8rem;
+  }
+
+  .utbildning {
+    margin-top: 2rem;
+
+    h4 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    ul {
+      li {
+        list-style: circle;
+        font-size: 2rem;
+      }
+
+      li + li {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

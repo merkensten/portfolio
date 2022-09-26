@@ -1,14 +1,14 @@
 export const NavbarItems = [
   {
     name: 'Om Mig',
-    link: '#om-mig',
+    link: '/#om-mig',
   },
   {
     name: 'Projekt',
-    link: '#projekt',
+    link: '/projekt',
   },
   {
     name: 'Utbildningar',
-    link: '#utbildningar',
+    link: '/utbildningar',
   },
 ];
