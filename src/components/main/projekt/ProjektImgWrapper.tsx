@@ -22,11 +22,13 @@ function ProjektImgWrapper({
         className={styles.projekt_img_1}
         src={imageDesktopUrl}
         alt={imageDesktopAlt}
+        loading="lazy"
       />
       <img
         className={styles.projekt_img_2}
         src={imageMobileUrl}
         alt={imageMobileAlt}
+        loading="lazy"
       />
     </div>
   );

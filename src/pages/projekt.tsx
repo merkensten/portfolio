@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, ProjektImg } from '../components/main';
+import { Hero, ProjektImgWrapper, ProjektWrapper } from '../components/main';
 
 import styles from '../styles/pages/Projekt.module.scss';
 
@@ -14,8 +14,14 @@ function projekt() {
       />
       <div className={styles.projekt_wrapper}>
         <h2>Projekten</h2>
-        <div className={styles.projekt}>
-          <h3>Voii</h3>
+
+        <ProjektWrapper
+          title="Voii"
+          imageDesktopUrl="/bilder/projekt/voii-projekt-desktop.svg"
+          imageDesktopAlt="voii desktop version"
+          imageMobileUrl="bilder/projekt/voii-projekt-mobil.svg"
+          imageMobileAlt="voii mobil version"
+        >
           <p>
             Voii är mitt primära utvecklingsprojekt vid sidan av utbildningen.
             Detta är ett aktivt projekt som jag jobbar med. Jag håller på att
@@ -32,9 +38,15 @@ function projekt() {
             Voii.se är en webbplats som skall underlätta när man letar efter ett
             nytt mobilabonnemang med eller utan telefon.
           </p>
-        </div>
-        <div className={styles.projekt}>
-          <h3>Todo app Next.js Nest JS</h3>
+        </ProjektWrapper>
+
+        <ProjektWrapper
+          title="Todo app Next.js Nest JS"
+          imageDesktopUrl="/bilder/projekt/voii-projekt-desktop.svg"
+          imageDesktopAlt="voii desktop version"
+          imageMobileUrl="bilder/projekt/voii-projekt-mobil.svg"
+          imageMobileAlt="voii mobil version"
+        >
           <p>
             Detta är ett projekt som jag nyligen skapat för att lära mig mer om
             Nest JS men också för att ha ett projekt som jag kan visa upp koden
@@ -50,9 +62,14 @@ function projekt() {
           >
             Github repot för detta projekt
           </a>
-        </div>
-        <div className={styles.projekt}>
-          <h3>E-dice</h3>
+        </ProjektWrapper>
+        <ProjektWrapper
+          title="E-dice"
+          imageDesktopUrl="/bilder/projekt/voii-projekt-desktop.svg"
+          imageDesktopAlt="voii desktop version"
+          imageMobileUrl="bilder/projekt/voii-projekt-mobil.svg"
+          imageMobileAlt="voii mobil version"
+        >
           <p>
             Ett av de större projekten under frontend utbildningen på
             ec-utbildning var att skapa en e-handel i grupp. Min grupp valde att
@@ -104,10 +121,16 @@ function projekt() {
               </a>
             </li>
           </ul>
-        </div>
+        </ProjektWrapper>
+
         <h2>Övriga projekt:</h2>
-        <div className={styles.projekt}>
-          <h3>Stensholms Trädgård</h3>
+        <ProjektWrapper
+          title="Stensholms Trädgård"
+          imageDesktopUrl="/bilder/projekt/voii-projekt-desktop.svg"
+          imageDesktopAlt="voii desktop version"
+          imageMobileUrl="bilder/projekt/voii-projekt-mobil.svg"
+          imageMobileAlt="voii mobil version"
+        >
           <p>
             Ett projekt som jag gjort i mitt företag där jag skapat en webbplats
             åt ett lokalt företag i min hemstad. Webbplatsen är skapad med
@@ -121,9 +144,14 @@ function projekt() {
           >
             Till Stensholms Trädgård
           </a>
-        </div>
-        <div className={styles.projekt}>
-          <h3>Caferangen</h3>
+        </ProjektWrapper>
+        <ProjektWrapper
+          title="Caferangen"
+          imageDesktopUrl="/bilder/projekt/voii-projekt-desktop.svg"
+          imageDesktopAlt="voii desktop version"
+          imageMobileUrl="bilder/projekt/voii-projekt-mobil.svg"
+          imageMobileAlt="voii mobil version"
+        >
           <p>
             Denna webbplats är skapad med Squarespace, anledning till valet på
             Squarespace var att de anställda på restaurangen själva skall kunna
@@ -137,7 +165,7 @@ function projekt() {
           <a href="https://www.caferangen.se/" target="_blank" rel="noreferrer">
             Till Caferangen
           </a>
-        </div>
+        </ProjektWrapper>
       </div>
     </>
   );
