@@ -7,7 +7,8 @@
 }
 
 .projekt_img_wrapper {
-  margin: 4rem 0;
+  margin: 4rem auto;
+  max-width: 1200px;
 
   img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -36,13 +37,18 @@
   }
 
   @media (min-width: 1200px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     .projekt_img_1 {
       display: block;
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
     .projekt_img_2 {
       display: block;
+      grid-column-start: 4;
+      grid-column-end: 6;
     }
   }
 }

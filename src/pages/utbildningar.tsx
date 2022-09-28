@@ -1,12 +1,18 @@
 import React from 'react';
-
+import { SEO } from '../components/seo';
 import { Hero } from '../components/main';
 
 import styles from '../styles/pages/Utbildningar.module.scss';
 
 function utbildningar() {
   return (
-    <main>
+    <>
+      <SEO
+        title="Utbildningar"
+        description="Mattis Erkensten Utbildningar"
+        image="/favicon.svg"
+        pageUrl="https://mattiserkensten.se/utbildningar"
+      />
       <Hero
         title="Mina utbildningar"
         subTitle="Jag har gått flera utbildningar relaterade till webbutveckling och har även jobbat med webbutveckling i flera år. Jag har också gått en tvåårig utbildning inom e-handel."
@@ -86,7 +92,7 @@ function utbildningar() {
           </p>
         </div>
       </div>
-    </main>
+    </>
   );
 }
 

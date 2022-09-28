@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Wrapper } from '../../layout';
 
 import styles from './Projekt.module.scss';
@@ -6,30 +7,18 @@ import styles from './Projekt.module.scss';
 type Props = {
   title: string;
   text: string;
-  image1Url: string;
-  image1Alt: string;
-  image2Url: string;
-  image2Alt: string;
 };
 
-function Projekt({
-  title,
-  text,
-  image1Url,
-  image1Alt,
-  image2Url,
-  image2Alt,
-}: Props) {
+function Projekt({ title, text }: Props) {
   return (
     <Wrapper cssClass={styles.projekt_wrapper}>
       <h2 id="projekt" className={styles.projekt_title}>
         {title}
       </h2>
       <p className={styles.projekt_text}>{text}</p>
-      <div className={styles.projekt_img_wrapper}>
-        <img className={styles.projekt_img_1} src={image1Url} alt={image1Alt} />
-        <img className={styles.projekt_img_2} src={image2Url} alt={image2Alt} />
-      </div>
+      <Link href="/projekt">
+        <button className='btn'>Till mina projekt</button>
+      </Link>
     </Wrapper>
   );
   3;

@@ -10,13 +10,9 @@ import {
   Kontakt,
 } from '../components/main';
 
-const projektData = {
+const projektInfo = {
   title: 'Projekt',
-  text: 'Jag har valt att endast lyfta fram ett projekt på min portfolio. Anledningen till det är att detta projekt är ett skarpt projekt, en affiliate webbplats som jag aktivt arbetar med.Webbplatsen är voii.se och det är en webbplats som underlättar när man behöver hitta ett nytt mobilabonnemang.Webbplatsen är skriven med Next.js (React), TypeScript och Tailwind CSS. Webbplatsen nyttjar ett headless CMS (Contentful) och data kring abonnemangen hämtas in från en server jag skapat.För att hantera datan kring mobilabonnemang och mobiltelefoner har jag skapat en node / express server. Även för servern använder jag mig av TypeScript då det är grymt.',
-  image1Url: '/bilder/projekt/voii-projekt-desktop.svg',
-  image1Alt: 'voii.se desktop',
-  image2Url: '/bilder/projekt/voii-projekt-mobil.svg',
-  image2Alt: 'voii.se mobile',
+  text: 'Jag har valt att lyfta utt ett fåtal projekt på min portfolio. Tre av projekten är utvecklade med kod och två av projekten är skapade med wordpress / squarespace, de är verkliga projekt som jag har skapat åt företag. Klicka på knappen nedan för att komma till projekt sidan där du kan läsa mer om alla projekt som jag har skapat samt navigera dig vidare till github repon för de projekt som är öppna.',
 };
 
 const verktygImages = [
@@ -67,14 +63,7 @@ const Home: NextPage = () => {
           imgUrl="/bilder/mattis/mattis-bild.png"
           imgAlt="Mattis Portfolio Om Mig bild"
         />
-        <Projekt
-          title={projektData.title}
-          text={projektData.text}
-          image1Url={projektData.image1Url}
-          image1Alt={projektData.image1Alt}
-          image2Url={projektData.image2Url}
-          image2Alt={projektData.image2Alt}
-        />
+        <Projekt title={projektInfo.title} text={projektInfo.text} />
         <Verktyg
           title="Verktyg som jag har arbetat med"
           images={verktygImages}
