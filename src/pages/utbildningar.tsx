@@ -15,7 +15,7 @@ function utbildningar() {
       />
       <Hero
         title="Mina utbildningar"
-        subTitle="Jag har gått flera utbildningar relaterade till webbutveckling och har även jobbat med webbutveckling i flera år. Jag har också gått en tvåårig utbildning inom e-handel."
+        subTitle="Jag har gått flera utbildningar relaterat till webbutveckling och har även jobbat med webbutveckling i flera år. Jag har också gått en tvåårig utbildning inom e-handel."
         imgUrl="/bilder/utbildningar/utbildningar-hero.svg"
         imgAlt="Mattis Portfolio Utbildningar Hero bild illustration"
       />
@@ -33,7 +33,7 @@ function utbildningar() {
             har vi också foksuerat mycket på versionshantering med git och
             github när vi har jobbat i grupp.
           </p>
-          <h4>Kurser som jag läst i denna kurs:</h4>
+          <h4>Kurser som jag läst i denna utbildning:</h4>
           <ul>
             <li>HTML5 och CSS3 med SEO</li>
             <li>JavaScript</li>
@@ -74,7 +74,7 @@ function utbildningar() {
         </div>
         <div className={styles.utbildning}>
           <h3>
-            E-handelslogistiker / E-commerce manager -Nässjö Akademin (2017 -
+            E-handelslogistiker / E-commerce manager - Nässjö Akademin (2017 -
             2019)
           </h3>
           <p>

@@ -15,7 +15,7 @@ function projekt() {
       />
       <Hero
         title="Mina projekt"
-        subTitle="Jag har skapat flera projekt under åren, både skarpa projekt i företag och som del av min utbildning. Nedan kan du läsa mer om de projekt som jag valt att lyfta fram."
+        subTitle="Jag har skapat flera projekt under åren, både skarpa projekt i företag och andra projekt som en del av min utbildning. Nedan kan du läsa mer om de projekt som jag valt att lyfta fram."
         imgUrl="/bilder/projekt-hero.svg"
         imgAlt="Mattis Portfolio Projekt Hero bild illustration"
       />
@@ -107,8 +107,8 @@ function projekt() {
           imageMobileAlt="edice mobil version"
         >
           <p>
-            Ett av de större projekten under frontend utbildningen på
-            ec-utbildning var att skapa en e-handel i grupp. Min grupp valde att
+            Ett av de större projekten som vi skapade under frontend utbildningen på
+            Ec Utbildning var att skapa en e-handel i grupp. Min grupp valde att
             skapa det fiktiv företaget E-dice där man kan köpa coola tärningar.
             Projektet byggdes upp i tre delar, clienten, server och en admin
             app.

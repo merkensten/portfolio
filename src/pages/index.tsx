@@ -25,17 +25,17 @@ const verktygImages = [
 const utbildningar = [
   {
     title:
-      '2017 - 2019 E-handelslogistiker / E-commerce manager (Nässjö Akademin)',
-  },
-  {
-    title: '2020 - Frontend Developer (Changemakers education)',
+      '2021 - 2023 Frontend Developer (EC Educations)',
   },
   {
     title: '2021 - Fullstack JavaScript (Mölndals yh)',
   },
   {
+    title: '2020 - Frontend Developer (Changemakers education)',
+  },
+  {
     title:
-      '2021 - 2023 Frontend Developer (EC Educations), fokus på Mern Stacken',
+      '2017 - 2019 E-handelslogistiker / E-commerce manager (Nässjö Akademin)',
   },
 ];
 
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Hero
           title="Mattis Erkensten"
-          subTitle="Jag är en JavaScript / TypeScript utvecklare med primärt fokus på Frontend som söker jobb som utvecklare."
+          subTitle="Jag är en JavaScript / TypeScript utvecklare med primärt fokus på Frontend som söker jobb."
           imgUrl="/bilder/mattis/mattis-hero-bild.png"
           imgAlt="Mattis Portfolio Hero bild"
         />
