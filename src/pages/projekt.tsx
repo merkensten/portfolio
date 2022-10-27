@@ -32,22 +32,36 @@ function projekt() {
         >
           <p>
             Voii är mitt primära utvecklingsprojekt vid sidan av utbildningen.
-            Detta är ett aktivt projekt som jag jobbar med. Jag håller på att
-            bygga om hela webbplatsen då den nuvarande webbplatsen var
-            undermålig och att den inte har arbetats aktivt med. Den nya
-            webbplatsen byggs upp med Next.js för frontend och Nest JS för att
-            hantera data kring mobilabonnemang och mobiltelefoner. Ett headless
-            cms används för att hantera innehållet och Next.JS applikationen
-            bygger upp statiska sidor utifrån det innehåll som finns i headless
-            cmset.
-          </p>
-          <p>
-            Detta projekt är inte deployat på den riktiga domänen än utan är
-            fortfarande i utvecklingsläge i någon vecka till.
-          </p>
-          <p>
             Voii.se är en webbplats som skall underlätta när man letar efter ett
-            nytt mobilabonnemang med eller utan en ny mobiltelefon.
+            nytt mobilabonnemang med eller utan mobiltelefon.
+          </p>
+          <a href="https://voii.se" target="_blank" rel="noreferrer">
+            Besök Voii.se
+          </a>
+          <p>
+            Detta är ett aktivt projekt som jag jobbar med. Webbplatsen är
+            skapad med AstorJS och React. Astro är ett verktyg som i grunden
+            enbart skickar html och css till webbläsaren och man väljer sedan
+            vilka komponenter som JavaScript skall laddas in för. Detta leder
+            till att projekt skapade med Astro har en generellt sätt bra
+            prestanda. För att hantera priser för mobilabonnemang och
+            mobiltelefoner har jag skapat ett api med Nest JS där jag sedan
+            fetchar in datan i klienten från mitt api.
+          </p>
+          <p>
+            I och med att detta är ett skarpt projekt så har jag inget publikt
+            github repo för koden.
+          </p>
+          <p>Lighouse rapporten för voii ser ut på följande sätt:</p>
+          <img
+            src="/bilder/projekt/voii-lighthouse.jpg"
+            alt="Voii.se lighthouse rapport"
+            className="img-wrapper"
+          />
+          <p>
+            Anledningen till att den inte har 100% i prestanda är att jag
+            använder mig av tredjepartsscript som Google Tag Manager och ett
+            annat för att hantera Cookie Consent.
           </p>
         </ProjektWrapper>
 
@@ -107,11 +121,11 @@ function projekt() {
           imageMobileAlt="edice mobil version"
         >
           <p>
-            Ett av de större projekten som vi skapade under frontend utbildningen på
-            Ec Utbildning var att skapa en e-handel i grupp. Min grupp valde att
-            skapa det fiktiv företaget E-dice där man kan köpa coola tärningar.
-            Projektet byggdes upp i tre delar, clienten, server och en admin
-            app.
+            Ett av de större projekten som vi skapade under frontend
+            utbildningen på Ec Utbildning var att skapa en e-handel i grupp. Min
+            grupp valde att skapa det fiktiv företaget E-dice där man kan köpa
+            coola tärningar. Projektet byggdes upp i tre delar, clienten, server
+            och en admin app.
           </p>
           <p>
             Clienten är frontenden för e-handeln där kunden kan se produkter,
