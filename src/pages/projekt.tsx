@@ -4,7 +4,7 @@ import { Hero, ProjektWrapper } from '../components/main';
 
 import styles from '../styles/pages/Projekt.module.scss';
 
-function projekt() {
+function Projekt() {
   return (
     <>
       <SEO
@@ -223,4 +223,4 @@ function projekt() {
   );
 }
 
-export default projekt;
+export default Projekt;
