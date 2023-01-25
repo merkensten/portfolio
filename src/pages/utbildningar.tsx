@@ -4,7 +4,7 @@ import { Hero } from '../components/main';
 
 import styles from '../styles/pages/Utbildningar.module.scss';
 
-function utbildningar() {
+function Utbildningar() {
   return (
     <>
       <SEO
@@ -44,8 +44,8 @@ function utbildningar() {
             <li>LIA 1, Webbutveckling</li>
             <li>Projekt - agil webbutveckling i JavaScript</li>
             <li>API:er mot backend</li>
-            <li>Examensarbete (Pågående)</li>
-            <li>LIA 2 (Framtida)</li>
+            <li>Examensarbete</li>
+            <li>LIA 2</li>
           </ul>
         </div>
         <div className={styles.utbildning}>
@@ -96,4 +96,4 @@ function utbildningar() {
   );
 }
 
-export default utbildningar;
+export default Utbildningar;
