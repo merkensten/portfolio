@@ -31,35 +31,32 @@ function Projekt() {
           imageMobileAlt="voii mobil version"
         >
           <p>
-            Voii är mitt primära utvecklingsprojekt vid sidan av utbildningen.
+            Voii var ett utvecklingsprojekt vid sidan av utbildningen.
             Voii.se är en webbplats som skall underlätta när man letar efter ett
             nytt mobilabonnemang med eller utan mobiltelefon.
           </p>
-          <a href="https://voii.se" target="_blank" rel="noreferrer">
-            Besök Voii.se
-          </a>
+          <p>Pågrund av tidsbrist har jag valt att lägga ned detta projekt</p>
           <p>
-            Detta är ett aktivt projekt som jag jobbar med. Webbplatsen är
+            Detta var ett projekt som jag jobbade med. Webbplatsen var
             skapad med AstorJS och React. Astro är ett verktyg som i grunden
             enbart skickar html och css till webbläsaren och man väljer sedan
             vilka komponenter som JavaScript skall laddas in för. Detta leder
             till att projekt skapade med Astro har en generellt sätt bra
             prestanda. För att hantera priser för mobilabonnemang och
-            mobiltelefoner har jag skapat ett api med Nest JS där jag sedan
-            fetchar in datan i klienten från mitt api.
+            mobiltelefoner skapade jag ett rest api med Nest JS där jag hanterade den dynamiska datan.
           </p>
           <p>
             I och med att detta är ett skarpt projekt så har jag inget publikt
             github repo för koden.
           </p>
-          <p>Lighouse rapporten för voii ser ut på följande sätt:</p>
+          <p>Lighouse rapporten för voii såg ut på följande sätt:</p>
           <img
             src="/bilder/projekt/voii-lighthouse.jpg"
             alt="Voii.se lighthouse rapport"
             className="img-wrapper"
           />
           <p>
-            Anledningen till att den inte har 100% i prestanda är att jag
+            Anledningen till att den inte hade 100% i prestanda är att jag
             använder mig av tredjepartsscript som Google Tag Manager och ett
             annat för att hantera Cookie Consent.
           </p>
